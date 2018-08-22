@@ -270,7 +270,7 @@ class AlertsPlugin {
     const dashboardTemplates = this.getDashboardTemplates(configDashboards);
 
     const functions = this.serverless.service
-                          .getAllFunctions()
+                          .getAllFunctionsNames()
                           .map(functionName => ({ name: functionName }));
 
     const cf = _.chain(dashboardTemplates)

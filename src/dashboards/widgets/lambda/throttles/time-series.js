@@ -21,7 +21,7 @@ const createWidget = (config) => {
     'AWS/Lambda',
     'Throttles',
     'FunctionName',
-    `${config.service}-${config.stage}-${f.name}`,
+    f.name, // `${config.service}-${config.stage}-${f.name}`,
     {
       stat: 'Sum',
       period: 900,

@@ -3,6 +3,7 @@ provider:
   name: aws
   runtime: nodejs4.3
   region: us-east-1
+  apiName: customApi
   profile: ${opt:profile}
 
 package:
